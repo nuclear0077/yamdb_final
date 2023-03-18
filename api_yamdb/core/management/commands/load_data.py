@@ -3,15 +3,14 @@ import logging
 import os
 import shutil
 from datetime import datetime
-import pandas as pd
 from pathlib import Path
 
+import pandas as pd
+from core.utils import email_is_valid
 from django.conf import settings
 from django.core.management.base import BaseCommand
-
 from reviews.models import Genre, Category, TitleGenre, Title, Review, Comment
 from users.models import User
-from core.utils import email_is_valid
 
 MODELS = {
     Genre: 'genre',
