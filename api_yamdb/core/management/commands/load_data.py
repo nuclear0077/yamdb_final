@@ -113,7 +113,7 @@ class Data:
             index=False)
         return True
 
-    def __prepare_users(slef):
+    def __prepare_users(self):
         logging.debug('Подготавливаем users')
         users = pd.read_csv(PATH_FILES.get('users'))
         users[['is_superuser', 'is_staff', 'is_active']] = None
