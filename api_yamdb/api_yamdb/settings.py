@@ -166,7 +166,7 @@ PATH_DATA = Path(BASE_DIR, 'static/data/')
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': os.getenv('ENGINE', default='django.db.backends.postgresql'),
         'NAME': os.getenv('DB_NAME', default='api_yamdb'),
         'USER': os.getenv('POSTGRES_USER', default='postgres'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', default='postgres'),
