@@ -1,13 +1,9 @@
-from rest_framework import mixins
-from rest_framework import viewsets
-
-from django.core.validators import validate_email
+from django.conf import settings
 from django.core import mail
 from django.core.exceptions import ValidationError
-from django.core.validators import RegexValidator
+from django.core.validators import RegexValidator, validate_email
 from django.utils.regex_helper import _lazy_re_compile
-from django.conf import settings
-
+from rest_framework import mixins, viewsets
 
 username_validator = RegexValidator(
     _lazy_re_compile(r'^[\w.@+-]+\Z'),
