@@ -47,6 +47,12 @@ cp .env.example .env
 docker-compose up -d --build  
 ```
 
+Инициализировать базу данных
+
+```
+sudo docker-compose exec db createdb -U postgres api_yamdb
+```
+
 Применить миграции
 
 ```
