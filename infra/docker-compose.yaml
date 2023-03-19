@@ -18,7 +18,7 @@ services:
       - ./.env
   web:
     container_name: ${COMPOSE_PROJECT_NAME}_web
-    image: nuclear0077/api_yamdb:latest
+    image: nuclear0077/api_yamdb:latest 
     restart: always
     volumes:
       - static_value:/app/static/
