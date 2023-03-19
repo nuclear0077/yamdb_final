@@ -176,6 +176,7 @@ python -m smtpd -n -c DebuggingServer localhost:25
 Для просмотра документации необходимо запустить проект и перейти по ссылке http://localhost:8000/api/schema/swagger-ui/ или http://localhost:8000/api/schema/redoc
 а также можно перейти https://editor.swagger.io нажать на file, выбрать import url и в поле указать https://github.com/nuclear0077/api_yamdb/blob/master/api_yamdb/static/redoc.yaml
 
+### Тестовый проект доступен по адресу http://84.201.148.87
 ## Developer
 
 - [Aleksandr M](https://github.com/nuclear0077)
