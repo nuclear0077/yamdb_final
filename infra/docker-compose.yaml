@@ -8,14 +8,12 @@ volumes:
 services:
   db:
     container_name: ${COMPOSE_PROJECT_NAME}_postgres
-    # образ, из которого должен быть запущен контейнер
     image: postgres:13.0-alpine
-    # volume и связанная с ним директория в контейнере
     volumes:
       - db:/var/lib/postgresql/data/
-    # адрес файла, где хранятся переменные окружения
     env_file:
       - ./.env
+
   web:
     container_name: ${COMPOSE_PROJECT_NAME}_web
     image: nuclear0077/api_yamdb:latest 
@@ -27,6 +25,7 @@ services:
       - db
     env_file:
       - ./.env
+
   nginx:
     container_name: ${COMPOSE_PROJECT_NAME}_nginx
     image: nginx:1.21.3-alpine
