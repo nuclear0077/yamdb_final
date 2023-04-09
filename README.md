@@ -1,5 +1,5 @@
 ## API-YAMDB
-![example workflow](https://github.com/nuclear0077/foodgram-project-react/actions/workflows/foodgram_workflow.yml/badge.svg)
+![example workflow](https://github.com/nuclear0077/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 ## About
 Проект YaMDb собирает отзывы пользователей на произведения. Сами произведения в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку.
 
